@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Music Subscription - Main Page</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <!-- ====================================================== -->
+        <!-- TOP BAR -->
+        <!-- ====================================================== -->
+
+        <div class="top-bar">
+
+            <h2>Music Subscription App</h2>
+
+            <div>
+
+                Welcome,
+                <span id="username"></span>
+
+                |
+
+                <a href="login.html"
+                   onclick="logoutUser()">
+
+                    Logout
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ====================================================== -->
+        <!-- USER SUBSCRIPTIONS -->
+        <!-- ====================================================== -->
+
+        <div class="section">
+
+            <h3>Your Subscriptions</h3>
+
+            <div id="subscriptionResults">
+
+                <!-- subscribed songs will appear here -->
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ====================================================== -->
+        <!-- SEARCH MUSIC -->
+        <!-- ====================================================== -->
+
+        <div class="section">
+
+            <h3>Search Music</h3>
+
+            <div class="search-box">
+
+                <input type="text"
+                       id="title"
+                       placeholder="Title">
+
+                <input type="text"
+                       id="artist"
+                       placeholder="Artist">
+
+                <input type="text"
+                       id="album"
+                       placeholder="Album">
+
+                <input type="text"
+                       id="year"
+                       placeholder="Year">
+
+                <button onclick="searchMusic()">
+
+                    Query
+
+                </button>
+
+            </div>
+
+            <p id="searchMessage"></p>
+
+            <div id="searchResults">
+
+                <!-- search results appear here -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
